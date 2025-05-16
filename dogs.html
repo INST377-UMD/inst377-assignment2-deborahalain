@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="styles/styles2.css" />
+</head>
+<body>
+  <nav>
+    <ul class="navigation">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Doggos!</h1>
+
+    <div id="dog-carousel" class="carousel-container">
+      <button class="carousel-arrow left" id="prev-btn">&#10094;</button>
+      <div class="carousel-images">
+      </div>
+      <button class="carousel-arrow right" id="next-btn">&#10095;</button>
+    </div>
+
+    <div id="breed-buttons" class="custombuttons"></div>
+
+    <div id="breed-info" class="breed-info" style="display:none;">
+      <h3 id="breed-name"></h3>
+      <p id="breed-description"></p>
+      <p><strong>Min Life:</strong> <span id="min-life"></span> years</p>
+      <p><strong>Max Life:</strong> <span id="max-life"></span> years</p>
+    </div>
+  </main>
+
+  <div id="microphone" class="mphone">
+    <h1>On this web page there are options to navigate using audio!</h1>
+    <p>Ensure your Mic is enabled to use this feature.</p>
+    <ul>
+      <li>Say: Load Dog Breed [Dog Breed Name]</li>
+      <li>Say: Navigate to [page]</li>
+      <li>Say: Change the color to [color]</li>
+      <li>Say: Hello</li>
+    </ul>
+    <button id="micon">Turn On Voice</button>
+    <button id="micoff">Turn Off Voice</button>
+  </div>
+
+  <script src="libs/annyang.min.js"></script>
+  <script src="scripts/common.js"></script>
+  <script src="scripts/dogs.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<head>
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="styles/styles2.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Stock Lookup</h1>
+
+    <div class="stock-form">
+      <label for="stockTicker">Enter Stock Ticker:</label>
+      <input type="text" id="stockTicker" placeholder="e.g., AAPL" />
+
+      <label for="dateRange">Select Range:</label>
+      <select id="dateRange">
+        <option value="30">30 Days</option>
+        <option value="60">60 Days</option>
+        <option value="90">90 Days</option>
+      </select>
+
+      <button id="lookupStock">Lookup</button>
+    </div>
+
+    <canvas id="stockChart" width="600" height="400"></canvas>
+
+    <section>
+      <table id="redditTable" border="1">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Comment Count</th>
+            <th>Sentiment</th>
+            <th>Sentiment Icon</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div id="microphone" class="mphone">
+    <h1>On this web page there are options to navigate using audio!</h1>
+    <br>
+    <p>Ensure your Mic is enabled to be able to use this feature.</p>
+    <ul>
+      <li>Lookup a stock
+        <ul>
+          <li>Say: Lookup [stock ticker]</li>
+        </ul>
+      </li>
+
+      <li>Navigate to a Different page
+        <ul>
+          <li>Say: Navigate to [page]</li>
+        </ul>
+      </li>
+
+      <li>Change the Page Color
+        <ul>
+          <li>Say: Change the color to [color]</li>
+        </ul>
+      </li>
+
+      <li>Say Hello back to you!
+        <ul>
+          <li>Say: [Hello]</li>
+        </ul>
+      </li>
+    </ul>
+    <button id="micon">Turn On Voice</button>
+    <button id="micoff">Turn Off Voice</button>
+  </div>
+
+  <script src="libs/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <script src="scripts/stocks.js"></script>
+</body>
+</html>

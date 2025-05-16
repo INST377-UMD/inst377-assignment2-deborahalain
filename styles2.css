@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lavender;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: purple;
+    padding: 10px 0;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .quotes {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #redditTable {
+    background-color: white;
+    width: 60%;
+  }
+
+  #redditTable img {
+    width: 300px; /* adjust as needed */
+    height: auto; /* keeps image proportional */
+  }
+  
+  #dog-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  .breed-info {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 5px solid #2196F3;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mphone {
+    margin-top: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: green;
+    border: 2px solid white;
+    color: #fff;
+  }
+
+  .mphone h1 {
+    text-align: center;
+  }
+  
+  .mphone ul {
+    list-style: disc;
+    margin: 15px 0;
+  }
+
+  .mphone ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+  .mphone button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mphone button:hover {
+    background-color: #1976D2;
+  }
+  
+  @media (max-width: 600px) {
+    .navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .custombuttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .button-63 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-63:active,
+  .button-63:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-63 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }

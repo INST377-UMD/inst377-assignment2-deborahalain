@@ -1,0 +1,65 @@
+<head>
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="styles/styles2.css" />
+</head>
+<body>
+
+  <h1>INST377 - Activities</h1>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>These are some different activities we can try!</h1>
+
+    <div class="custombuttons">
+      <button onclick="location.href='stocks.html'" class="button-63">Go to Stocks</button>
+      <button onclick="location.href='dogs.html'" class="button-63">Go to Dogs</button>
+    </div>
+
+    <section class="quotes">
+      <h2>Quote of the Page Load</h2>
+      <p id="quote">Loading quote...</p>
+    </section>
+  </main>
+
+  <div id="microphone" class="mphone">
+    <h1>On this web page there are options to navigate using audio!</h1>
+    <br>
+    <p>Ensure your Mic is enabled to be able to use this feature.</p>
+    <ul>
+      <li>Navigate to a Different Page
+        <ul>
+          <li>Say: Navigate to [page]</li>
+        </ul>
+      </li>
+
+      <li>Change the Page Color
+        <ul>
+          <li>Say: Change the color to [color]</li>
+        </ul>
+      </li>
+
+      <li>Say Hello back to you!
+        <ul>
+          <li>Say: [Hello]
+        </ul>
+      </li>
+    </ul>
+    <button id="micon">Turn On Voice</button>
+    <button id="micoff">Turn Off Voice</button>
+
+
+  </div>
+
+  <script src="libs/annyang.min.js"></script>
+  <script src="scripts/common.js"></script>
+  <script src="scripts/homepage.js"></script>
+
+</body>
+</html>
